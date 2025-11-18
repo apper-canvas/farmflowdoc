@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2024-12-19T00:00:00.000Z",
+    "temperature": {
+      "high": 68,
+      "low": 45
+    },
+    "condition": "Partly Cloudy",
+    "precipitation": 0,
+    "humidity": 65
+  },
+  {
+    "date": "2024-12-20T00:00:00.000Z",
+    "temperature": {
+      "high": 72,
+      "low": 48
+    },
+    "condition": "Sunny",
+    "precipitation": 0,
+    "humidity": 58
+  },
+  {
+    "date": "2024-12-21T00:00:00.000Z",
+    "temperature": {
+      "high": 75,
+      "low": 52
+    },
+    "condition": "Sunny",
+    "precipitation": 0,
+    "humidity": 60
+  },
+  {
+    "date": "2024-12-22T00:00:00.000Z",
+    "temperature": {
+      "high": 69,
+      "low": 47
+    },
+    "condition": "Cloudy",
+    "precipitation": 15,
+    "humidity": 78
+  },
+  {
+    "date": "2024-12-23T00:00:00.000Z",
+    "temperature": {
+      "high": 64,
+      "low": 42
+    },
+    "condition": "Light Rain",
+    "precipitation": 25,
+    "humidity": 85
+  },
+  {
+    "date": "2024-12-24T00:00:00.000Z",
+    "temperature": {
+      "high": 71,
+      "low": 49
+    },
+    "condition": "Partly Cloudy",
+    "precipitation": 5,
+    "humidity": 70
+  },
+  {
+    "date": "2024-12-25T00:00:00.000Z",
+    "temperature": {
+      "high": 73,
+      "low": 51
+    },
+    "condition": "Sunny",
+    "precipitation": 0,
+    "humidity": 62
+  }
+]

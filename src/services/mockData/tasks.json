@@ -1,0 +1,57 @@
+[
+  {
+    "Id": 1,
+    "farmId": "1",
+    "title": "Water North Field Corn",
+    "description": "Deep watering for corn crop - 2 hours irrigation",
+    "dueDate": "2024-12-20T06:00:00.000Z",
+    "priority": "high",
+    "completed": false,
+    "recurring": true,
+    "createdAt": "2024-12-15T10:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "farmId": "1",
+    "title": "Harvest Wheat South Field",
+    "description": "Harvest mature wheat crop - weather permitting",
+    "dueDate": "2024-12-22T08:00:00.000Z",
+    "priority": "high",
+    "completed": false,
+    "recurring": false,
+    "createdAt": "2024-12-15T11:30:00.000Z"
+  },
+  {
+    "Id": 3,
+    "farmId": "2",
+    "title": "Apply Fertilizer to Soybeans",
+    "description": "Second fertilizer application for optimal growth",
+    "dueDate": "2024-12-21T10:00:00.000Z",
+    "priority": "medium",
+    "completed": false,
+    "recurring": false,
+    "createdAt": "2024-12-16T09:15:00.000Z"
+  },
+  {
+    "Id": 4,
+    "farmId": "3",
+    "title": "Pest Inspection",
+    "description": "Weekly pest inspection for all greenhouse crops",
+    "dueDate": "2024-12-19T14:00:00.000Z",
+    "priority": "medium",
+    "completed": true,
+    "recurring": true,
+    "createdAt": "2024-12-14T13:00:00.000Z"
+  },
+  {
+    "Id": 5,
+    "farmId": "1",
+    "title": "Equipment Maintenance",
+    "description": "Monthly maintenance check on irrigation system",
+    "dueDate": "2024-12-25T11:00:00.000Z",
+    "priority": "low",
+    "completed": false,
+    "recurring": true,
+    "createdAt": "2024-12-10T16:00:00.000Z"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "farmId": "1",
+    "type": "expense",
+    "amount": 450.00,
+    "category": "Seeds",
+    "description": "Corn seed for North Field planting",
+    "date": "2024-04-10T00:00:00.000Z",
+    "createdAt": "2024-04-10T14:30:00.000Z"
+  },
+  {
+    "Id": 2,
+    "farmId": "1",
+    "type": "expense",
+    "amount": 230.75,
+    "category": "Fertilizer",
+    "description": "Nitrogen fertilizer for wheat crop",
+    "date": "2024-04-15T00:00:00.000Z",
+    "createdAt": "2024-04-15T11:20:00.000Z"
+  },
+  {
+    "Id": 3,
+    "farmId": "2",
+    "type": "income",
+    "amount": 1850.00,
+    "category": "Crop Sales",
+    "description": "Soybean harvest sale - Spring 2024",
+    "date": "2024-05-20T00:00:00.000Z",
+    "createdAt": "2024-05-20T16:45:00.000Z"
+  },
+  {
+    "Id": 4,
+    "farmId": "1",
+    "type": "expense",
+    "amount": 125.50,
+    "category": "Equipment",
+    "description": "Irrigation system repair parts",
+    "date": "2024-06-01T00:00:00.000Z",
+    "createdAt": "2024-06-01T13:15:00.000Z"
+  },
+  {
+    "Id": 5,
+    "farmId": "3",
+    "type": "income",
+    "amount": 2340.00,
+    "category": "Crop Sales",
+    "description": "Tomato harvest - premium grade",
+    "date": "2024-08-15T00:00:00.000Z",
+    "createdAt": "2024-08-15T17:30:00.000Z"
+  },
+  {
+    "Id": 6,
+    "farmId": "2",
+    "type": "expense",
+    "amount": 89.99,
+    "category": "Pesticides",
+    "description": "Organic pest control spray",
+    "date": "2024-06-10T00:00:00.000Z",
+    "createdAt": "2024-06-10T10:45:00.000Z"
+  }
+]

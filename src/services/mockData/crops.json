@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "farmId": "1",
+    "cropType": "Corn",
+    "fieldLocation": "North Field",
+    "plantingDate": "2024-04-15T06:00:00.000Z",
+    "expectedHarvestDate": "2024-09-30T18:00:00.000Z",
+    "status": "Growing",
+    "notes": "Regular watering schedule maintained"
+  },
+  {
+    "Id": 2,
+    "farmId": "1",
+    "cropType": "Wheat",
+    "fieldLocation": "South Field",
+    "plantingDate": "2024-03-10T07:30:00.000Z",
+    "expectedHarvestDate": "2024-08-15T17:00:00.000Z",
+    "status": "Mature",
+    "notes": "Ready for harvest within 2 weeks"
+  },
+  {
+    "Id": 3,
+    "farmId": "2",
+    "cropType": "Soybeans",
+    "fieldLocation": "East Plot",
+    "plantingDate": "2024-05-01T08:00:00.000Z",
+    "expectedHarvestDate": "2024-10-15T16:30:00.000Z",
+    "status": "Growing",
+    "notes": "Pest monitoring in progress"
+  },
+  {
+    "Id": 4,
+    "farmId": "3",
+    "cropType": "Tomatoes",
+    "fieldLocation": "Greenhouse A",
+    "plantingDate": "2024-06-01T09:00:00.000Z",
+    "expectedHarvestDate": "2024-08-30T19:00:00.000Z",
+    "status": "Flowering",
+    "notes": "Excellent growth conditions"
+  }
+]

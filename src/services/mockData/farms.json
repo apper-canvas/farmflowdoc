@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "name": "Green Valley Farm",
+    "location": "Springfield Valley",
+    "size": 150,
+    "sizeUnit": "acres",
+    "createdAt": "2024-01-15T08:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "name": "Sunny Meadows",
+    "location": "River County",
+    "size": 85,
+    "sizeUnit": "acres",
+    "createdAt": "2024-02-01T10:30:00.000Z"
+  },
+  {
+    "Id": 3,
+    "name": "Mountain View Ranch",
+    "location": "Highland Region",
+    "size": 300,
+    "sizeUnit": "acres",
+    "createdAt": "2024-01-20T14:15:00.000Z"
+  }
+]
