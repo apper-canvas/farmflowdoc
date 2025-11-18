@@ -152,11 +152,21 @@ handleClose();
 </div>
 
           <FormField
-            label="Soil Type"
+label="Soil Type"
+            type="select"
             name="soilType"
             value={formData.soilType}
             onChange={(e) => setFormData(prev => ({ ...prev, soilType: e.target.value }))}
-            placeholder="e.g., Clay, Sandy, Loam"
+            options={[
+              { value: "", label: "Select soil type..." },
+              { value: "sandy", label: "Sandy" },
+              { value: "silty", label: "Silty" },
+              { value: "clay", label: "Clay" },
+              { value: "loamy", label: "Loamy" },
+              { value: "sandy-loam", label: "Sandy Loam" },
+              { value: "clay-loam", label: "Clay Loam" },
+              { value: "silt-loam", label: "Silt Loam" }
+            ]}
           />
 
           <div className="flex space-x-4">
