@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { cn } from "@/lib/utils";
+import LogoutButton from "@/components/atoms/LogoutButton";
 import ApperIcon from "@/components/ApperIcon";
-import { cn } from "@/utils/cn";
+import NotificationModal from "@/components/organisms/NotificationModal";
+import SettingsModal from "@/components/organisms/SettingsModal";
 
-const Header = () => {
+function Header({ title = "FarmFlow" }) {
   const location = useLocation();
   const [showNotifications, setShowNotifications] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
+  
   const [unreadCount, setUnreadCount] = useState(3); // Example count, replace with actual logic
   const navItems = [
     { name: "Dashboard", path: "", icon: "LayoutDashboard" },
@@ -88,6 +92,7 @@ const Header = () => {
             >
               <ApperIcon name="Settings" size={20} />
             </button>
+            <LogoutButton />
           </div>
         </div>
       </div>
@@ -117,8 +122,23 @@ const Header = () => {
           })}
         </div>
       </div>
+{/* Notification Modal */}
+      {showNotifications && (
+        <NotificationModal
+          isOpen={showNotifications}
+          onClose={() => setShowNotifications(false)}
+        />
+      )}
+
+      {/* Settings Modal */}
+      {showSettings && (
+        <SettingsModal
+          isOpen={showSettings}
+          onClose={() => setShowSettings(false)}
+        />
+      )}
     </header>
   );
-};
+}
 
 export default Header;
