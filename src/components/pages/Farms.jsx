@@ -10,11 +10,12 @@ const Farms = () => {
   const [showModal, setShowModal] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
   const [editingFarm, setEditingFarm] = useState(null);
-  const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
     name: "",
     location: "",
     size: "",
-    sizeUnit: "acres"
+    sizeUnit: "acres",
+    soilType: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -26,11 +27,12 @@ const Farms = () => {
   ];
 
   const resetForm = () => {
-    setFormData({
+setFormData({
       name: "",
       location: "",
       size: "",
-      sizeUnit: "acres"
+      sizeUnit: "acres",
+      soilType: ""
     });
     setEditingFarm(null);
   };
@@ -41,11 +43,12 @@ const Farms = () => {
   };
 
   const handleEdit = (farm) => {
-    setFormData({
+setFormData({
       name: farm.name,
       location: farm.location,
       size: farm.size.toString(),
-      sizeUnit: farm.sizeUnit
+      sizeUnit: farm.sizeUnit,
+      soilType: farm.soilType || ""
     });
     setEditingFarm(farm);
     setShowModal(true);
@@ -75,7 +78,7 @@ const Farms = () => {
     setIsSubmitting(true);
     
     try {
-      const farmData = {
+const farmData = {
         ...formData,
         size: parseFloat(formData.size)
       };
@@ -146,7 +149,15 @@ handleClose();
               options={sizeUnitOptions}
               required
             />
-          </div>
+</div>
+
+          <FormField
+            label="Soil Type"
+            name="soilType"
+            value={formData.soilType}
+            onChange={(e) => setFormData(prev => ({ ...prev, soilType: e.target.value }))}
+            placeholder="e.g., Clay, Sandy, Loam"
+          />
 
           <div className="flex space-x-4">
             <Button

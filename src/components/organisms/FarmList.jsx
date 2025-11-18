@@ -95,11 +95,17 @@ loadFarms();
           <div key={farm.Id} className="card hover:shadow-xl">
             <div className="flex items-start justify-between mb-4">
               <div className="space-y-2">
-                <h3 className="text-xl font-bold text-gray-900">{farm.name}</h3>
+<h3 className="text-xl font-bold text-gray-900">{farm.name}</h3>
                 <div className="flex items-center text-sm text-gray-600">
                   <ApperIcon name="MapPin" size={14} className="mr-1" />
                   <span>{farm.location}</span>
                 </div>
+                {farm.soilType && (
+                  <div className="flex items-center text-sm text-gray-600">
+                    <ApperIcon name="Mountain" size={14} className="mr-1" />
+                    <span>{farm.soilType}</span>
+                  </div>
+                )}
               </div>
               
               <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-secondary/20 rounded-xl flex items-center justify-center">
